@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Halterofilia</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="theme-color" content="#111">
+</head>
+<body>
+
+<h1>🏋️ Calculadora Halterofilia</h1>
+
+<div class="inputs">
+  <input id="arranque" placeholder="RM Arranque">
+  <input id="envion" placeholder="RM Envión">
+  <input id="sd" placeholder="RM Sentadilla Delantera">
+  <input id="s" placeholder="RM Sentadilla">
+</div>
+
+<button onclick="calcular()">Calcular</button>
+
+<div id="tabla"></div>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
